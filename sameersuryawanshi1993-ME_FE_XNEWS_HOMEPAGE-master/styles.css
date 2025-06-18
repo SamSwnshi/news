@@ -27,21 +27,21 @@ nav {
   background: none;
   transition: right 0.3s;
 }
-.nav-items {
+.nav-itmes {
   display: flex;
   gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.nav-items li {
+.nav-itmes li {
   cursor: pointer;
   font-size: 1rem;
   color: #555;
   transition: color 0.2s;
 }
-.nav-items li:hover,
-.nav-items li:focus {
+.nav-itmes li:hover,
+.nav-itmes li:focus {
   color: #e63946;
 }
 .menu-button {
@@ -260,7 +260,7 @@ footer a:hover {
   nav.open {
     right: 0;
   }
-  .nav-items {
+  .nav-itmes {
     flex-direction: column;
     gap: 2rem;
     width: 100%;

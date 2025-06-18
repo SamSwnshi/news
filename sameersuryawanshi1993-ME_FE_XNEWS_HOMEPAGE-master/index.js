@@ -29,3 +29,15 @@ document.addEventListener('click', (e) => {
     nav.classList.remove('open');
   }
 });
+
+function updateHeroImage() {
+  const heroImg = document.querySelector('.hero-img img');
+  if (!heroImg) return;
+  if (window.innerWidth < 1000) {
+    heroImg.src = 'assets/images/image-web-3-mobile.jpg';
+  } else {
+    heroImg.src = 'assets/images/image-web-3-desktop.jpg';
+  }
+}
+window.addEventListener('resize', updateHeroImage);
+window.addEventListener('DOMContentLoaded', updateHeroImage);
